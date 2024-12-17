@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Site Personnel</title>
+        <link rel="stylesheet" href="../css/quiz.css">
+        <script src="../js/quiz.js" defer></script> 
+        <link rel="stylesheet" href="../css/acceuil.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+    <body class="background-image">
+        <header>
+            <h1>Quiz  </h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">À propos de moi</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="stages.html">Stages</a></li>
+                    <li><a href="maniestation.html">manifestation</a></li>
+                    <li><a href="projet.html">projet</a></li>
+                    <li><a href="passion.html">passion</a></li>
+                    <li><a href="quiz.html" style="color: rgb(41, 167, 154);">Quiz</a></li>
+                    <li><a href="temoignages.html">témoignages </a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="quizz">
+                <h2>Répondez au quiz ci-dessous :</h2>
+                <form id="quizForm" onsubmit="return verifier(event)">
+                    <ol>
+                        <li>
+                            <h3> Quelle balise est utilisée pour insérer un paragraphe en HTML ?</h3>
+                            <label><input type="radio" name="q1" value="a"> a) &lt;para&gt;</label><br>
+                            <label><input type="radio" name="q1" value="b"> b) &lt;p&gt;</label><br>
+                            <label><input type="radio" name="q1" value="c"> c) &lt;text&gt;</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Quelle propriété CSS est utilisée pour changer la couleur de fond d'un élément ?</h3>
+                            <label><input type="radio" name="q2" value="a"> a) background-color</label><br>
+                            <label><input type="radio" name="q2" value="b"> b) color</label><br>
+                            <label><input type="radio" name="q2" value="c"> c) bg-color</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Quelle balise HTML est utilisée pour insérer une vidéo ?</h3>
+                            <label><input type="radio" name="q3" value="a"> a) &lt;video&gt;</label><br>
+                            <label><input type="radio" name="q3" value="b"> b) &lt;vid&gt;</label><br>
+                            <label><input type="radio" name="q3" value="c"> c) &lt;media&gt;</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Comment définir un texte en gras en HTML ?</h3>
+                            <label><input type="radio" name="q4" value="a"> a) &lt;bold&gt;</label><br>
+                            <label><input type="radio" name="q4" value="b"> b) &lt;b&gt;</label><br>
+                            <label><input type="radio" name="q4" value="c"> c) &lt;strong&gt;</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Quelle propriété CSS est utilisée pour ajouter un espace entre les mots ?</h3>
+                            <label><input type="radio" name="q5" value="a"> a) word-spacing</label><br>
+                            <label><input type="radio" name="q5" value="b"> b) text-spacing</label><br>
+                            <label><input type="radio" name="q5" value="c"> c) spacing</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Quelle balise HTML est utilisée pour insérer une ligne horizontale ?</h3>
+                            <label><input type="radio" name="q6" value="a"> a) &lt;hr&gt;</label><br>
+                            <label><input type="radio" name="q6" value="b"> b) &lt;line&gt;</label><br>
+                            <label><input type="radio" name="q6" value="c"> c) &lt;break&gt;</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Comment déclarer une liste ordonnée en HTML ?</h3>
+                            <label><input type="radio" name="q7" value="a"> a) &lt;ol&gt;</label><br>
+                            <label><input type="radio" name="q7" value="b"> b) &lt;ul&gt;</label><br>
+                            <label><input type="radio" name="q7" value="c"> c) &lt;list&gt;</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Quelle balise HTML est utilisée pour ajouter une image ?</h3>
+                            <label><input type="radio" name="q8" value="a"> a) &lt;img&gt;</label><br>
+                            <label><input type="radio" name="q8" value="b"> b) &lt;picture&gt;</label><br>
+                            <label><input type="radio" name="q8" value="c"> c) &lt;media&gt;</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Comment créer un commentaire en HTML ?</h3>
+                            <label><input type="radio" name="q9" value="a"> a) // commentaire</label><br>
+                            <label><input type="radio" name="q9" value="b"> b) &lt;!-- commentaire --&gt;</label><br>
+                            <label><input type="radio" name="q9" value="c"> c) # commentaire</label><br>
+                        </li>
+        
+                        <li>
+                            <h3> Quelle balise HTML est utilisée pour inclure un tableau ?</h3>
+                            <label><input type="radio" name="q10" value="a"> a) &lt;table&gt;</label><br>
+                            <label><input type="radio" name="q10" value="b"> b) &lt;tab&gt;</label><br>
+                            <label><input type="radio" name="q10" value="c"> c) &lt;tbl&gt;</label><br>
+                        </li>
+                    </ol>
+                    <button type="submit">Valider</button>
+                    <br>
+                </form>
+        
+                <div id="result" class="resultat">
+                    <h3>Résultats du Quiz</h3>
+                    <p id="score"></p>
+                    <h3>Réponses correctes :</h3>
+                    <ul id="correctAnswers"></ul>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer" >
+    
+                        <div class="">
+                            <i class='bx bxs-map-pin' ></i>
+                            <span>                    adresse: route Teboulbi Klm 8
+                            </span>
+                        </div>
+                        <div class="">
+                            <i class='bx bx-phone' ></i>
+                            <span>                    Tel: +216 52519551 
+                            </span>
+                        </div>
+                        <div class="">
+                            <i class='bx bxl-gmail'></i>
+                            <span>                    Email : <a href="mailto:farahgaddour.05@gmail.com"> farahgaddour.05@gmail.com</a>
+                            </span>
+                        </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+   
